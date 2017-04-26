@@ -54,10 +54,8 @@ end
 
 def parse_character_movies(films_hash)
   # some iteration magic and puts out the movies in a nice list
-  x = 1
-  films_hash.each do |film|
-    puts "#{x} #{film}"
-    x += 1
+  films_hash.each_with_index do |film, index|
+    puts "#{index + 1} #{film}"
   end
 end
 
